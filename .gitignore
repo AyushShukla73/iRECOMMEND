@@ -9,9 +9,10 @@ dist/
 .env.local
 .env.*.local
 
-# Database
+# Database (keep schema, ignore runtime files)
 data/*.sqlite
-data/*.sqlite-journal
+data/*.sqlite-*
+!data/*.sql
 
 # Logs
 *.log

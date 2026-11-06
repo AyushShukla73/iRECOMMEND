@@ -15,6 +15,7 @@ import authRoutes from './routes/auth.js';
 import movieRoutes from './routes/movies.js';
 import userRoutes from './routes/users.js';
 import recommendationRoutes from './routes/recommendations.js';
+import apiIndexRoutes from './routes/index.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -67,6 +68,7 @@ if (process.env.NODE_ENV === 'development') {
 }
 
 // API routes
+app.use('/api', apiIndexRoutes);
 app.use('/api/auth', authRoutes);
 app.use('/api/movies', movieRoutes);
 app.use('/api/users', userRoutes);
