@@ -100,3 +100,5 @@ export const searchMovies = (query, limit = 10) => {
     )
     .slice(0, limit);
 };
+
+export { movies };
