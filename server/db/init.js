@@ -10,18 +10,15 @@ let db;
 
 export const getDb = () => {
   if (!db) {
-    db = new Database(':memory:');
+    const dbPath = path.join(config.dataPath, 'users.sqlite');
+    db = new Database(dbPath);
     initTables(db);
+    console.log('SQLite database initialized at:', dbPath);
   }
   return db;
 };
 
-export const initDatabase = () => {
-  const dbPath = path.join(config.dataPath, 'users.sqlite');
-  db = new Database(dbPath);
-  initTables(db);
-  console.log('SQLite database initialized at:', dbPath);
-};
+export const initDatabase = getDb;
 
 const initTables = (db) => {
   db.exec(`

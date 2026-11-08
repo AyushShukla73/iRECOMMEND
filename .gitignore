@@ -8,6 +8,7 @@ client/dist/
 # Runtime data
 data/*.sqlite
 data/*.db
+data/server-port.json
 
 # Environment
 .env
@@ -40,3 +41,7 @@ coverage/
 
 # Claude Code
 .claude/
+
+# Local scratch/debug scripts (may contain hardcoded API keys)
+test-*.mjs
+fetch-posters.mjs
