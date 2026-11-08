@@ -1,52 +1,798 @@
 [
-  {"id": "1", "title": "The Matrix", "genres": ["Action", "Sci-Fi"], "year": 1999, "rating": 8.7, "type": "movie", "overview": "A computer hacker learns about the true nature of his reality and his role in the war against its controllers.", "poster": "https://via.placeholder.com/300x450?text=The+Matrix", "tmdbId": 603},
-  {"id": "2", "title": "Inception", "genres": ["Action", "Sci-Fi", "Thriller"], "year": 2010, "rating": 8.8, "type": "movie", "overview": "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.", "poster": "https://via.placeholder.com/300x450?text=Inception", "tmdbId": 27205},
-  {"id": "3", "title": "Interstellar", "genres": ["Adventure", "Drama", "Sci-Fi"], "year": 2014, "rating": 8.6, "type": "movie", "overview": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.", "poster": "https://via.placeholder.com/300x450?text=Interstellar", "tmdbId": 157336},
-  {"id": "4", "title": "Blade Runner 2049", "genres": ["Action", "Sci-Fi", "Thriller"], "year": 2017, "rating": 8.0, "type": "movie", "overview": "A blade runner's discovery of a long-lost threat leads to a hunt that finds him in the company of Rick Deckard, a former blade runner who's been retired for 30 years.", "poster": "https://via.placeholder.com/300x450?text=Blade+Runner+2049", "tmdbId": 335984},
-  {"id": "5", "title": "Arrival", "genres": ["Adventure", "Sci-Fi"], "year": 2016, "rating": 7.9, "type": "movie", "overview": "When her twelve-year-old son is diagnosed with a rare disease, a researcher is forced to make a difficult decision for those she loves, ultimately deciding to accept the task given to her by the military to prevent further catastrophes.", "poster": "https://via.placeholder.com/300x450?text=Arrival", "tmdbId": 365936},
-  {"id": "6", "title": "The Notebook", "genres": ["Drama", "Romance"], "year": 2004, "rating": 7.3, "type": "movie", "overview": "Naive young Allie forgets the most important part of her first kiss with eccentric and popular Noah before they get separated in high school.',", "poster": "https://via.placeholder.com/300x450?text=The+Notebook", "tmdbId": 1289},
-  {"id": "7", "title": "Titanic", "genres": ["Drama", "Romance"], "year": 1997, "rating": 7.3, "type": "movie", "overview": "A seventeen-year-old aristocrat falls in love with a charming artist during the ill-fated voyage of the RMS Titanic.", "poster": "https://via.placeholder.com/300x450?text=Titanic", "tmdbId": 13},
-  {"id": "8", "title": "La La Land", "genres": ["Drama", "Music", "Romance"], "year": 2016, "rating": 8.0, "type": "movie", "overview": "A poet falls in love with an actress on the run to Hollywood, hoping to make it big.", "poster": "https://via.placeholder.com/300x450?text=La+La+Land", "tmdbId": 299536},
-  {"id": "9", "title": "Die Hard", "genres": ["Action", "Crime", "Thriller"], "year": 1988, "rating": 8.2, "type": "movie", "overview": "An NYPD officer is on the roof of a skyscraper trying to get to the bottom of a case, while a terrorist has taken several employees hostage.", "poster": "https://via.placeholder.com/300x450?text=Die+Hard", "tmdbId": 10891},
-  {"id": "10", "title": "John Wick", "genres": ["Action", "Crime"], "year": 2014, "rating": 7.4, "type": "movie", "overview": "The worlds most legendary hitman John Wick has a price on his head and a code he will never break while trying to escape his past and reclaim what was taken from him.", "poster": "https://via.placeholder.com/300x450?text=John+Wick", "tmdbId": 1416},
-  {"id": "11", "title": "The Dark Knight", "genres": ["Action", "Crime", "Drama"], "year": 2008, "rating": 9.0, "type": "movie", "overview": "When the menace known as the Joker surfaces, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.", "poster": "https://via.placeholder.com/300x450?text=The+Dark+Knight", "tmdbId": 155},
-  {"id": "12", "title": "Pulp Fiction", "genres": ["Crime", "Drama"], "year": 1994, "rating": 8.9, "type": "movie", "overview": "The lives of two mob hitmen, a bungling thief, and a clever pair of prostitutes intertwine in the world of underground crime in Los Angeles.", "poster": "https://via.placeholder.com/300x450?text=Pulp+Fiction", "tmdbId": 680},
-  {"id": "13", "title": "The Shawshank Redemption", "genres": ["Crime", "Drama"], "year": 1994, "rating": 9.3, "type": "movie", "overview": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.", "poster": "https://via.placeholder.com/300x450?text=Shawshank", "tmdbId": 757},
-  {"id": "14", "title": "Fight Club", "genres": ["Drama", "Thriller"], "year": 1999, "rating": 8.8, "type": "movie", "overview": "A disgruntled factory worker and a charismatic soap salesman form an underground fight club that evolves into a violent anarchist movement.", "poster": "https://via.placeholder.com/300x450?text=Fight+Club", "tmdbId": 550},
-  {"id": "15", "title": "Forrest Gump", "genres": ["Drama", "Romance", "War"], "year": 1994, "rating": 8.8, "type": "movie", "overview": "The story of a man who goes against the stream of history and ends up on the verge of changing the world.", "poster": "https://via.placeholder.com/300x450?text=Forrest+Gump", "tmdbId": 13},
-  {"id": "16", "title": "The Prestige", "genres": ["Drama", "Mystery", "Sci-Fi", "Thriller"], "year": 2006, "rating": 8.5, "type": "movie", "overview": "Three friends keep their secret from the world and pursue each other's obsession with the art of illusion.", "poster": "https://via.placeholder.com/300x450?text=The+Prestige", "tmdbId": 487},
-  {"id": "17", "title": "Memento", "genres": ["Mystery", "Thriller"], "year": 2000, "rating": 8.4, "type": "movie", "overview": "A man is affected by a condition that causes him to lose the short-term memory of his recent life events.", "poster": "https://via.placeholder.com/300x450?text=Memento", "tmdbId": 6382},
-  {"id": "18", "title": "The Green Mile", "genres": ["Drama", "Fantasy", "Crime"], "year": 1999, "rating": 8.5, "type": "movie", "overview": "The story of a death row correctional officer who is unjustly sent to the electric chair.", "poster": "https://via.placeholder.com/300x450?text=Green+Mile", "tmdbId": 5582},
-  {"id": "19", "title": "Goodfellas", "genres": ["Crime", "Drama"], "year": 1990, "rating": 8.7, "type": "movie", "overview": "The story of Henry Hill and his crimes in the mob underworld.", "poster": "https://via.placeholder.com/300x450?text=Goodfellas", "tmdbId": 1129},
-  {"id": "20", "title": "The Departed", "genres": ["Crime", "Drama", "Thriller"], "year": 2006, "rating": 8.5, "type": "movie", "overview": "An undercover cop named Frank Costello is on the edge of retirement when he's given one last job.", "poster": "https://via.placeholder.com/300x450?text=The+Departed", "tmdbId": 935},
-  {"id": "21", "title": "Parasite", "genres": ["Drama", "Thriller"], "year": 2019, "rating": 8.6, "type": "movie", "overview": "By paying a huge sum of money to rent a poor basement, the Kim family pretends to be qualified staff to serve a wealthy family.", "poster": "https://via.placeholder.com/300x450?text=Parasite", "tmdbId": 447365},
-  {"id": "22", "title": "Ingrid Goes Wild", "genres": ["Comedy", "Drama", "Romance"], "year": 2018, "rating": 6.7, "type": "movie", "overview": "A 30-year-old woman who's always lived inside her mother's protective cocoon is thrust into the spotlight as a social media influencer.", "poster": "https://via.placeholder.com/300x450?text=Ingrid+Goes+Wild", "tmdbId": 447644},
-  {"id": "23", "title": "Eternal Sunshine of the Spotless Mind", "genres": ["Drama", "Romance", "Sci-Fi"], "year": 2004, "rating": 8.3, "type": "movie", "overview": "A man decides to have his ex-girlfriend remove memory of him from her mind while she is going through memories of their relationship.", "poster": "https://via.placeholder.com/300x450?text=Eternal+Sunshine", "tmdbId": 347},
-  {"id": "24", "title": "Amélie", "genres": ["Comedy", "Drama", "Romance"], "year": 2001, "rating": 8.3, "type": "movie", "overview": "Amélie Poulain is a shy, sheltered young woman who has a knack for playing matchmaker between her friends and strangers.", "poster": "https://via.placeholder.com/300x450?text=Amelie", "tmdbId": 176},
-  {"id": "25", "title": "Coco", "genres": ["Animation", "Adventure", "Family", "Music"], "year": 2017, "rating": 8.4, "type": "movie", "overview": "Aspiring musician Vincent Hoa's journey through his family's past in the Land of the Dead.", "poster": "https://via.placeholder.com/300x450?text=Coco", "tmdbId": 366553},
-  {"id": "26", "title": "Spirited Away", "genres": ["Animation", "Adventure", "Family", "Fantasy"], "year": 2001, "rating": 8.6, "type": "movie", "overview": "When ten-year-old Chihiro moves into a new apartment with her parents, she stumbles upon an empty kimono shop.", "poster": "https://via.placeholder.com/300x450?text=Spirited+Away", "tmdbId": 1329},
-  {"id": "27", "title": "Your Name", "genres": ["Animation", "Romance", "Sci-Fi"], "year": 2016, "rating": 8.4, "type": "movie", "overview": "Two teenagers cross paths and have a magical connection, but are unaware they're living 13 years apart.", "poster": "https://via.placeholder.com/300x450?text=Your+Name", "tmdbId": 326450},
-  {"id": "28", "title": "Dune", "genres": ["Adventure", "Sci-Fi", "War"], "year": 2021, "rating": 8.2, "type": "movie", "overview": "A nobleman is born with a rare genetic ability that can be used to help the universe survive or be destroyed.", "poster": "https://via.placeholder.com/300x450?text=Dune", "tmdbId": 603692},
-  {"id": "29", "title": "Everything Everywhere All at Once", "genres": ["Action", "Comedy", "Sci-Fi", "Thriller"], "year": 2022, "rating": 7.8, "type": "movie", "overview": "A beleaguered Chinese-American dishwasher discovers he can tap into the collective knowledge and skills of countless parallel universes.", "poster": "https://via.placeholder.com/300x450?text=Everything+Everywhere", "tmdbId": 536554},
-  {"id": "30", "title": "The Batman", "genres": ["Action", "Crime", "Drama", "Mystery"], "year": 2022, "rating": 7.9, "type": "movie", "overview": "When a string of cryptic events pushes Gotham City into a new era of terror, a detective must uncover the conspiracy that threatens to fracture the very foundations of the city.", "poster": "https://via.placeholder.com/300x450?text=The+Batman", "tmdbId": 272058},
-  {"id": "31", "title": "Stranger Things", "genres": ["Drama", "Horror", "Sci-Fi", "Thriller"], "year": 2016, "rating": 8.6, "type": "tv", "overview": "In a small town, a boy disappears and his friends must turn to an unlikely hero to find him.", "poster": "https://via.placeholder.com/300x450?text=Stranger+Things", "tmdbId": 81110},
-  {"id": "32", "title": "The Mandalorian", "genres": ["Action", "Adventure", "Drama", "Sci-Fi"], "year": 2019, "rating": 8.7, "type": "tv", "overview": "The adventures of a wandering bounty hunter in the outer reaches of the galaxy.", "poster": "https://via.placeholder.com/300x450?text=The+Mandalorian", "tmdbId": 697954},
-  {"id": "33", "title": "Breaking Bad", "genres": ["Crime", "Drama", "Thriller"], "year": 2008, "rating": 9.5, "type": "tv", "overview": "Heisenberg's story begins with high school chemistry teacher Walter White being diagnosed with inoperable lung cancer.", "poster": "https://via.placeholder.com/300x450?text=Breaking+Bad", "tmdbId": 8112},
-  {"id": "34", "title": "Game of Thrones", "genres": ["Action", "Adventure", "Drama", "Fantasy"], "year": 2011, "rating": 9.2, "type": "tv", "overview": "Seven noble families fight for control of the singular country of Westeros.", "poster": "https://via.placeholder.com/300x450?text=Game+of+Thrones", "tmdbId": 1399},
-  {"id": "35", "title": "The Witcher", "genres": ["Action", "Adventure", "Drama", "Fantasy"], "year": 2019, "rating": 8.1, "type": "tv", "overview": "Geralt of Rivia finds himself in a complex world of nobles, monsters, and prophecy.", "poster": "https://via.placeholder.com/300x450?text=The+Witcher", "tmdbId": 75472},
-  {"id": "36", "title": "The Office", "genres": ["Comedy"], "year": 2005, "rating": 8.9, "type": "tv", "overview": "A mockumentary about the awkward daily life of a staff at the Dunder Mifflin paper company.", "poster": "https://via.placeholder.com/300x450?text=The+Office", "tmdbId": 85897},
-  {"id": "37", "title": "Friends", "genres": ["Comedy", "Drama", "Romance"], "year": 1994, "rating": 8.9, "type": "tv", "overview": "A group of six friends navigate their careers, relationships, and personal lives in Manhattan.", "poster": "https://via.placeholder.com/300x450?text=Friends", "tmdbId": 1588},
-  {"id": "38", "title": "The Golden Girls", "genres": ["Comedy", "Drama", "Romance"], "year": 1985, "rating": 8.3, "type": "tv", "overview": "Four elderly friends living in Miami share their experiences and adventures.", "poster": "https://via.placeholder.com/300x450?text=Golden+Girls", "tmdbId": 592},
-  {"id": "39", "title": "The X-Files", "genres": ["Drama", "Mystery", Sci-Fi", "Thriller"], "year": 1993, "rating": 8.5, "type": "tv", "overview": "FBI agents investigate paranormal phenomena called X-Files.", "poster": "https://via.placeholder.com/300x450?text=The+X-Files", "tmdbId": 1809},
-  {"id": "40", "title": "Black Mirror", "genres": ["Drama", "Horror", "Sci-Fi", "Thriller"], "year": 2011, "rating": 8.5, "type": "tv", "overview": "An anthology series exploring the dark side of technology and its impact on society.", "poster": "https://via.placeholder.com/300x450?text=Black+Mirror", "tmdbId": 72812},
-  {"id": "41", "title": "Westworld", "genres": ["Drama", "Mystery", "Sci-Fi", "Thriller"], "year": 2016, "rating": 8.6, "type": "tv", "overview": "An advanced android robot host suffers a crisis of identity across several timelines.", "poster": "https://via.placeholder.com/300x450?text=Westworld", "tmdbId": 68379},
-  {"id": "42", "title": "Better Call Saul", "genres": ["Crime", "Drama"], "year": 2015, "rating": 8.7, "type": "tv", "overview": "The story of Jimmy McGill, a small-time lawyer who will become the notorious lawyer Saul Goodman.", "poster": "https://via.placeholder.com/300x450?text=Better+Call+Saul", "tmdbId": 55842},
-  {"id": "43", "title": "The Crown", "genres": ["Drama", "History"], "year": 2016, "rating": 8.7, "type": "tv", "overview": "The story of the reign of Queen Elizabeth II, and the political events that shaped the second half of the 20th century.", "poster": "https://via.placeholder.com/300x450?text=The+Crown", "tmdbId": 48113},
-  {"id": "44", "title": "Chernobyl", "genres": ["Drama", "History", "Thriller"], "year": 2019, "rating": 9.4, "type": "tv", "overview": "After the Chernobyl accident, a group of liquidators attempt to prevent the disaster from spreading.", "poster": "https://via.placeholder.com/300x450?text=Chernobyl", "tmdbId": 78773},
-  {"id": "45", "title": "Dark", "genres": ["Drama", "Mystery", "Sci-Fi"], "year": 2017, "rating": 8.8, "type": "tv", "overview": "The disappearance of two children reveals the existence of a time machine.", "poster": "https://via.placeholder.com/300x450?text=Dark", "tmdbId": 568486},
-  {"id": "46", "title": "La Casa de Papel", "genres": ["Action", "Crime", "Drama", "Thriller"], "year": 2017, "rating": 8.3, "type": "tv", "overview": "A group of friends take on an impossible heist in exchange for a chance to start over.", "poster": "https://via.placeholder.com/300x450?text=Money+Heist", "tmdbId": 73427},
-  {"id": "47", "title": "Squid Game", "genres": ["Drama", "Horror", "Thriller"], "year": 2021, "rating": 8.4, "type": "tv", "overview": "A man in debt participates in a secret game with deadly rules.", "poster": "https://via.placeholder.com/300x450?text=Squid+Game", "tmdbId": 1313961},
-  {"id": "48", "title": "The Last of Us", "genres": ["Action", "Adventure", "Drama", "Sci-Fi", "Thriller"], "year": 2023, "rating": 8.8, "type": "tv", "overview": "A post-apocalyptic story following the journey of a hardened survivor and an impulsive teenager.", "poster": "https://via.placeholder.com/300x450?text=The+Last+of+Us", "tmdbId": 93409},
-  {"id": "49", "title": "Succession", "genres": ["Drama"], "year": 2018, "rating": 8.7, "type": "tv", "overview": "The story of the Roy family, the dysfunctional media and entertainment dynasty.", "poster": "https://via.placeholder.com/300x450?text=Succession", "tmdbId": 76341},
-  {"id": "50", "title": "The Boys", "genres": ["Action", "Adventure", "Drama", "War"], "year": 2019, "rating": 8.7, "type": "tv", "overview": "What happens when ordinary people find themselves empowered with the most dangerous superpowers on the planet?", "poster": "https://via.placeholder.com/300x450?text=The+Boys", "tmdbId": 77264}
+  {
+    "id": "1",
+    "title": "The Matrix",
+    "genres": [
+      "Action",
+      "Sci-Fi"
+    ],
+    "year": 1999,
+    "rating": 8.7,
+    "type": "movie",
+    "overview": "A computer hacker learns about the true nature of his reality and his role in the war against its controllers.",
+    "poster": "https://image.tmdb.org/t/p/w300/f89U3ADr1oiB1s9GkdPOEpXUk5H.jpg",
+    "poster_path": "/f89U3ADr1oiB1s9GkdPOEpXUk5H.jpg",
+    "tmdbId": 603
+  },
+  {
+    "id": "2",
+    "title": "Inception",
+    "genres": [
+      "Action",
+      "Sci-Fi",
+      "Thriller"
+    ],
+    "year": 2010,
+    "rating": 8.8,
+    "type": "movie",
+    "overview": "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.",
+    "poster": "https://image.tmdb.org/t/p/w300/edv5CZvWj09upOsy2Y6xjBdA4xU.jpg",
+    "poster_path": "/edv5CZvWj09upOsy2Y6xjBdA4xU.jpg",
+    "tmdbId": 27205
+  },
+  {
+    "id": "3",
+    "title": "Interstellar",
+    "genres": [
+      "Adventure",
+      "Drama",
+      "Sci-Fi"
+    ],
+    "year": 2014,
+    "rating": 8.6,
+    "type": "movie",
+    "overview": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.",
+    "poster": "https://image.tmdb.org/t/p/w300/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg",
+    "poster_path": "/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg",
+    "tmdbId": 157336
+  },
+  {
+    "id": "4",
+    "title": "Blade Runner 2049",
+    "genres": [
+      "Action",
+      "Sci-Fi",
+      "Thriller"
+    ],
+    "year": 2017,
+    "rating": 8,
+    "type": "movie",
+    "overview": "A blade runner's discovery of a long-lost threat leads to a hunt that finds him in the company of Rick Deckard, a former blade runner who's been retired for 30 years.",
+    "poster": "https://image.tmdb.org/t/p/w300/gajva2L0rPYkEWjYgXfN3x751E.jpg",
+    "poster_path": "/gajva2L0rPYkEWjYgXfN3x751E.jpg",
+    "tmdbId": 335984
+  },
+  {
+    "id": "5",
+    "title": "Arrival",
+    "genres": [
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "year": 2016,
+    "rating": 7.9,
+    "type": "movie",
+    "overview": "When her twelve-year-old son is diagnosed with a rare disease, a researcher is forced to make a difficult decision for those she loves, ultimately deciding to accept the task given to her by the military to prevent further catastrophes.",
+    "poster": "https://image.tmdb.org/t/p/w300/nGZ00gwNgz85xbML1mdxweNzqw0.jpg",
+    "tmdbId": 365936,
+    "poster_path": "/nGZ00gwNgz85xbML1mdxweNzqw0.jpg"
+  },
+  {
+    "id": "6",
+    "title": "The Notebook",
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "year": 2004,
+    "rating": 7.3,
+    "type": "movie",
+    "overview": "Naive young Allie forgets the most important part of her first kiss with eccentric and popular Noah before they get separated in high school,",
+    "poster": "https://image.tmdb.org/t/p/w300/qEiFwOyrPyN8J7IrxiTVeTTcU9W.jpg",
+    "poster_path": "/qEiFwOyrPyN8J7IrxiTVeTTcU9W.jpg",
+    "tmdbId": 1289
+  },
+  {
+    "id": "7",
+    "title": "Titanic",
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "year": 1997,
+    "rating": 7.3,
+    "type": "movie",
+    "overview": "A seventeen-year-old aristocrat falls in love with a charming artist during the ill-fated voyage of the RMS Titanic.",
+    "poster": "https://image.tmdb.org/t/p/w300/9xjZS2rlVxm8SFx8kPC3aIGogYQ.jpg",
+    "poster_path": "/9xjZS2rlVxm8SFx8kPC3aIGogYQ.jpg",
+    "tmdbId": 13
+  },
+  {
+    "id": "8",
+    "title": "La La Land",
+    "genres": [
+      "Drama",
+      "Music",
+      "Romance"
+    ],
+    "year": 2016,
+    "rating": 8,
+    "type": "movie",
+    "overview": "A poet falls in love with an actress on the run to Hollywood, hoping to make it big.",
+    "poster": "https://image.tmdb.org/t/p/w300/ylXCdC106IKiarftHkcacasaAcb.jpg",
+    "poster_path": "/ylXCdC106IKiarftHkcacasaAcb.jpg",
+    "tmdbId": 299536
+  },
+  {
+    "id": "9",
+    "title": "Die Hard",
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller"
+    ],
+    "year": 1988,
+    "rating": 8.2,
+    "type": "movie",
+    "overview": "An NYPD officer is on the roof of a skyscraper trying to get to the bottom of a case, while a terrorist has taken several employees hostage.",
+    "poster": "https://image.tmdb.org/t/p/w300/yFihWxQcmqcaIId6N9IT1t4UUnE.jpg",
+    "poster_path": "/yFihWxQcmqcaIId6N9IT1t4UUnE.jpg",
+    "tmdbId": 10891
+  },
+  {
+    "id": "10",
+    "title": "John Wick",
+    "genres": [
+      "Action",
+      "Crime"
+    ],
+    "year": 2014,
+    "rating": 7.4,
+    "type": "movie",
+    "overview": "The worlds most legendary hitman John Wick has a price on his head and a code he will never break while trying to escape his past and reclaim what was taken from him.",
+    "poster": "https://image.tmdb.org/t/p/w300/fZPSd91yGE9fCcCe6OoQr6E3QVK.jpg",
+    "poster_path": "/fZPSd91yGE9fCcCe6OoQr6E3QVK.jpg",
+    "tmdbId": 1416
+  },
+  {
+    "id": "11",
+    "title": "The Dark Knight",
+    "genres": [
+      "Action",
+      "Crime",
+      "Drama"
+    ],
+    "year": 2008,
+    "rating": 9,
+    "type": "movie",
+    "overview": "When the menace known as the Joker surfaces, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
+    "poster": "https://image.tmdb.org/t/p/w300/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
+    "tmdbId": 155,
+    "poster_path": "/qJ2tW6WMUDux911r6m7haRef0WH.jpg"
+  },
+  {
+    "id": "12",
+    "title": "Pulp Fiction",
+    "genres": [
+      "Crime",
+      "Drama"
+    ],
+    "year": 1994,
+    "rating": 8.9,
+    "type": "movie",
+    "overview": "The lives of two mob hitmen, a bungling thief, and a clever pair of prostitutes intertwine in the world of underground crime in Los Angeles.",
+    "poster": "https://image.tmdb.org/t/p/w300/vQWk5YBFWF4bZaofAbv0tShwBvQ.jpg",
+    "tmdbId": 680,
+    "poster_path": "/vQWk5YBFWF4bZaofAbv0tShwBvQ.jpg"
+  },
+  {
+    "id": "13",
+    "title": "The Shawshank Redemption",
+    "genres": [
+      "Crime",
+      "Drama"
+    ],
+    "year": 1994,
+    "rating": 9.3,
+    "type": "movie",
+    "overview": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
+    "poster": "https://image.tmdb.org/t/p/w300/qTCKB5rxYzgdWUUH4UMgpRVH3GJ.jpg",
+    "tmdbId": 757,
+    "poster_path": "/qTCKB5rxYzgdWUUH4UMgpRVH3GJ.jpg"
+  },
+  {
+    "id": "14",
+    "title": "Fight Club",
+    "genres": [
+      "Drama",
+      "Thriller"
+    ],
+    "year": 1999,
+    "rating": 8.8,
+    "type": "movie",
+    "overview": "A disgruntled factory worker and a charismatic soap salesman form an underground fight club that evolves into a violent anarchist movement.",
+    "poster": "https://image.tmdb.org/t/p/w300/jSziioSwPVrOy9Yow3XhWIBDjq1.jpg",
+    "tmdbId": 550,
+    "poster_path": "/jSziioSwPVrOy9Yow3XhWIBDjq1.jpg"
+  },
+  {
+    "id": "15",
+    "title": "Forrest Gump",
+    "genres": [
+      "Drama",
+      "Romance",
+      "War"
+    ],
+    "year": 1994,
+    "rating": 8.8,
+    "type": "movie",
+    "overview": "The story of a man who goes against the stream of history and ends up on the verge of changing the world.",
+    "poster": "https://image.tmdb.org/t/p/w300/saHP97rTPS5eLmrLQEcANmKrsFl.jpg",
+    "tmdbId": 13,
+    "poster_path": "/saHP97rTPS5eLmrLQEcANmKrsFl.jpg"
+  },
+  {
+    "id": "16",
+    "title": "The Prestige",
+    "genres": [
+      "Drama",
+      "Mystery",
+      "Sci-Fi",
+      "Thriller"
+    ],
+    "year": 2006,
+    "rating": 8.5,
+    "type": "movie",
+    "overview": "Three friends keep their secret from the world and pursue each other's obsession with the art of illusion.",
+    "poster": "https://via.placeholder.com/300x450?text=The%20Prestige",
+    "tmdbId": 487
+  },
+  {
+    "id": "17",
+    "title": "Memento",
+    "genres": [
+      "Mystery",
+      "Thriller"
+    ],
+    "year": 2000,
+    "rating": 8.4,
+    "type": "movie",
+    "overview": "A man is affected by a condition that causes him to lose the short-term memory of his recent life events.",
+    "poster": "https://image.tmdb.org/t/p/w300/wGyPmsAuT4akPTYSUEjxSXRU81n.jpg",
+    "tmdbId": 6382,
+    "poster_path": "/wGyPmsAuT4akPTYSUEjxSXRU81n.jpg"
+  },
+  {
+    "id": "18",
+    "title": "The Green Mile",
+    "genres": [
+      "Drama",
+      "Fantasy",
+      "Crime"
+    ],
+    "year": 1999,
+    "rating": 8.5,
+    "type": "movie",
+    "overview": "The story of a death row correctional officer who is unjustly sent to the electric chair.",
+    "poster": "https://via.placeholder.com/300x450?text=The%20Green%20Mile",
+    "tmdbId": 5582
+  },
+  {
+    "id": "19",
+    "title": "Goodfellas",
+    "genres": [
+      "Crime",
+      "Drama"
+    ],
+    "year": 1990,
+    "rating": 8.7,
+    "type": "movie",
+    "overview": "The story of Henry Hill and his crimes in the mob underworld.",
+    "poster": "https://via.placeholder.com/300x450?text=Goodfellas",
+    "tmdbId": 1129
+  },
+  {
+    "id": "20",
+    "title": "The Departed",
+    "genres": [
+      "Crime",
+      "Drama",
+      "Thriller"
+    ],
+    "year": 2006,
+    "rating": 8.5,
+    "type": "movie",
+    "overview": "An undercover cop named Frank Costello is on the edge of retirement when he's given one last job.",
+    "poster": "https://image.tmdb.org/t/p/w300/gHm96BRW4GoI339rF1vYoYTB6Qe.jpg",
+    "tmdbId": 935,
+    "poster_path": "/gHm96BRW4GoI339rF1vYoYTB6Qe.jpg"
+  },
+  {
+    "id": "21",
+    "title": "Parasite",
+    "genres": [
+      "Drama",
+      "Thriller"
+    ],
+    "year": 2019,
+    "rating": 8.6,
+    "type": "movie",
+    "overview": "By paying a huge sum of money to rent a poor basement, the Kim family pretends to be qualified staff to serve a wealthy family.",
+    "poster": "https://image.tmdb.org/t/p/w300/r2J02Z2OpNTctfOSN1Ydgii51I3.jpg",
+    "tmdbId": 447365,
+    "poster_path": "/r2J02Z2OpNTctfOSN1Ydgii51I3.jpg"
+  },
+  {
+    "id": "22",
+    "title": "Ingrid Goes Wild",
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance"
+    ],
+    "year": 2018,
+    "rating": 6.7,
+    "type": "movie",
+    "overview": "A 30-year-old woman who's always lived inside her mother's protective cocoon is thrust into the spotlight as a social media influencer.",
+    "poster": "https://image.tmdb.org/t/p/w300/xakayFVXj60zIR9W7w1BYwUlXX7.jpg",
+    "tmdbId": 447644,
+    "poster_path": "/xakayFVXj60zIR9W7w1BYwUlXX7.jpg"
+  },
+  {
+    "id": "23",
+    "title": "Eternal Sunshine of the Spotless Mind",
+    "genres": [
+      "Drama",
+      "Romance",
+      "Sci-Fi"
+    ],
+    "year": 2004,
+    "rating": 8.3,
+    "type": "movie",
+    "overview": "A man decides to have his ex-girlfriend remove memory of him from her mind while she is going through memories of their relationship.",
+    "poster": "https://image.tmdb.org/t/p/w300/gWIkCmYaRDlA78WMIfRUlURuLCZ.jpg",
+    "tmdbId": 347,
+    "poster_path": "/gWIkCmYaRDlA78WMIfRUlURuLCZ.jpg"
+  },
+  {
+    "id": "24",
+    "title": "Amélie",
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance"
+    ],
+    "year": 2001,
+    "rating": 8.3,
+    "type": "movie",
+    "overview": "Amélie Poulain is a shy, sheltered young woman who has a knack for playing matchmaker between her friends and strangers.",
+    "poster": "https://image.tmdb.org/t/p/w300/rLNSOudrayDBo1uqXjrhxcjODIC.jpg",
+    "tmdbId": 176,
+    "poster_path": "/rLNSOudrayDBo1uqXjrhxcjODIC.jpg"
+  },
+  {
+    "id": "25",
+    "title": "Coco",
+    "genres": [
+      "Animation",
+      "Adventure",
+      "Family",
+      "Music"
+    ],
+    "year": 2017,
+    "rating": 8.4,
+    "type": "movie",
+    "overview": "Aspiring musician Vincent Hoa's journey through his family's past in the Land of the Dead.",
+    "poster": "https://via.placeholder.com/300x450?text=Coco",
+    "tmdbId": 366553
+  },
+  {
+    "id": "26",
+    "title": "Spirited Away",
+    "genres": [
+      "Animation",
+      "Adventure",
+      "Family",
+      "Fantasy"
+    ],
+    "year": 2001,
+    "rating": 8.6,
+    "type": "movie",
+    "overview": "When ten-year-old Chihiro moves into a new apartment with her parents, she stumbles upon an empty kimono shop.",
+    "poster": "https://via.placeholder.com/300x450?text=Spirited%20Away",
+    "tmdbId": 1329
+  },
+  {
+    "id": "27",
+    "title": "Your Name",
+    "genres": [
+      "Animation",
+      "Romance",
+      "Sci-Fi"
+    ],
+    "year": 2016,
+    "rating": 8.4,
+    "type": "movie",
+    "overview": "Two teenagers cross paths and have a magical connection, but are unaware they're living 13 years apart.",
+    "poster": "https://image.tmdb.org/t/p/w300/7P9eHJWHzRlYk5UJe1JMcPaP4dM.jpg",
+    "tmdbId": 326450,
+    "poster_path": "/7P9eHJWHzRlYk5UJe1JMcPaP4dM.jpg"
+  },
+  {
+    "id": "28",
+    "title": "Dune",
+    "genres": [
+      "Adventure",
+      "Sci-Fi",
+      "War"
+    ],
+    "year": 2021,
+    "rating": 8.2,
+    "type": "movie",
+    "overview": "A nobleman is born with a rare genetic ability that can be used to help the universe survive or be destroyed.",
+    "poster": "https://image.tmdb.org/t/p/w300/vZloFAK7NmvMGKE7VkF5UHaz0I.jpg",
+    "tmdbId": 603692,
+    "poster_path": "/vZloFAK7NmvMGKE7VkF5UHaz0I.jpg"
+  },
+  {
+    "id": "29",
+    "title": "Everything Everywhere All at Once",
+    "genres": [
+      "Action",
+      "Comedy",
+      "Sci-Fi",
+      "Thriller"
+    ],
+    "year": 2022,
+    "rating": 7.8,
+    "type": "movie",
+    "overview": "A beleaguered Chinese-American dishwasher discovers he can tap into the collective knowledge and skills of countless parallel universes.",
+    "poster": "https://image.tmdb.org/t/p/w300/d9nBoowhjiiYc4FBNtQkPY7c11H.jpg",
+    "tmdbId": 536554,
+    "poster_path": "/d9nBoowhjiiYc4FBNtQkPY7c11H.jpg"
+  },
+  {
+    "id": "30",
+    "title": "The Batman",
+    "genres": [
+      "Action",
+      "Crime",
+      "Drama",
+      "Mystery"
+    ],
+    "year": 2022,
+    "rating": 7.9,
+    "type": "movie",
+    "overview": "When a string of cryptic events pushes Gotham City into a new era of terror, a detective must uncover the conspiracy that threatens to fracture the very foundations of the city.",
+    "poster": "https://image.tmdb.org/t/p/w300/f4Kp5jN9jTDb083anHHxhlzSx9P.jpg",
+    "tmdbId": 272058,
+    "poster_path": "/f4Kp5jN9jTDb083anHHxhlzSx9P.jpg"
+  },
+  {
+    "id": "31",
+    "title": "Stranger Things",
+    "genres": [
+      "Drama",
+      "Horror",
+      "Sci-Fi",
+      "Thriller"
+    ],
+    "year": 2016,
+    "rating": 8.6,
+    "type": "tv",
+    "overview": "In a small town, a boy disappears and his friends must turn to an unlikely hero to find him.",
+    "poster": "https://via.placeholder.com/300x450?text=Stranger%20Things",
+    "tmdbId": 81110
+  },
+  {
+    "id": "32",
+    "title": "The Mandalorian",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Drama",
+      "Sci-Fi"
+    ],
+    "year": 2019,
+    "rating": 8.7,
+    "type": "tv",
+    "overview": "The adventures of a wandering bounty hunter in the outer reaches of the galaxy.",
+    "poster": "https://via.placeholder.com/300x450?text=The%20Mandalorian",
+    "tmdbId": 697954
+  },
+  {
+    "id": "33",
+    "title": "Breaking Bad",
+    "genres": [
+      "Crime",
+      "Drama",
+      "Thriller"
+    ],
+    "year": 2008,
+    "rating": 9.5,
+    "type": "tv",
+    "overview": "Heisenberg's story begins with high school chemistry teacher Walter White being diagnosed with inoperable lung cancer.",
+    "poster": "https://via.placeholder.com/300x450?text=Breaking%20Bad",
+    "tmdbId": 8112
+  },
+  {
+    "id": "34",
+    "title": "Game of Thrones",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Drama",
+      "Fantasy"
+    ],
+    "year": 2011,
+    "rating": 9.2,
+    "type": "tv",
+    "overview": "Seven noble families fight for control of the singular country of Westeros.",
+    "poster": "https://image.tmdb.org/t/p/w300/1XS1oqL89opfnbLl8WnZY1O1uJx.jpg",
+    "tmdbId": 1399,
+    "poster_path": "/1XS1oqL89opfnbLl8WnZY1O1uJx.jpg",
+    "posterSource": "tmdb"
+  },
+  {
+    "id": "35",
+    "title": "The Witcher",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Drama",
+      "Fantasy"
+    ],
+    "year": 2019,
+    "rating": 8.1,
+    "type": "tv",
+    "overview": "Geralt of Rivia finds himself in a complex world of nobles, monsters, and prophecy.",
+    "poster": "https://image.tmdb.org/t/p/w300/PtJR0c12X862pq8JdXuf9egZpN.jpg",
+    "tmdbId": 75472,
+    "poster_path": "/PtJR0c12X862pq8JdXuf9egZpN.jpg",
+    "posterSource": "tmdb"
+  },
+  {
+    "id": "36",
+    "title": "The Office",
+    "genres": [
+      "Comedy"
+    ],
+    "year": 2005,
+    "rating": 8.9,
+    "type": "tv",
+    "overview": "A mockumentary about the awkward daily life of a staff at the Dunder Mifflin paper company.",
+    "poster": "https://via.placeholder.com/300x450?text=The%20Office",
+    "tmdbId": 85897
+  },
+  {
+    "id": "37",
+    "title": "Friends",
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance"
+    ],
+    "year": 1994,
+    "rating": 8.9,
+    "type": "tv",
+    "overview": "A group of six friends navigate their careers, relationships, and personal lives in Manhattan.",
+    "poster": "https://image.tmdb.org/t/p/w300/zMlG1lGI2hZjGYU7pFTgEiJgTAn.jpg",
+    "tmdbId": 1588,
+    "poster_path": "/zMlG1lGI2hZjGYU7pFTgEiJgTAn.jpg",
+    "posterSource": "tmdb"
+  },
+  {
+    "id": "38",
+    "title": "The Golden Girls",
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance"
+    ],
+    "year": 1985,
+    "rating": 8.3,
+    "type": "tv",
+    "overview": "Four elderly friends living in Miami share their experiences and adventures.",
+    "poster": "https://image.tmdb.org/t/p/w300/2cWiAykgUuINyRcPwEgUMmJbDhN.jpg",
+    "tmdbId": 592,
+    "poster_path": "/2cWiAykgUuINyRcPwEgUMmJbDhN.jpg",
+    "posterSource": "tmdb"
+  },
+  {
+    "id": "39",
+    "title": "The X-Files",
+    "genres": [
+      "Drama",
+      "Mystery",
+      "Sci-Fi",
+      "Thriller"
+    ],
+    "year": 1993,
+    "rating": 8.5,
+    "type": "tv",
+    "overview": "FBI agents investigate paranormal phenomena called X-Files.",
+    "poster": "https://image.tmdb.org/t/p/w300/5NYUeWc7lXq6pbHDP0Pz3xxKhPC.jpg",
+    "tmdbId": 1809,
+    "poster_path": "/5NYUeWc7lXq6pbHDP0Pz3xxKhPC.jpg",
+    "posterSource": "tmdb"
+  },
+  {
+    "id": "40",
+    "title": "Black Mirror",
+    "genres": [
+      "Drama",
+      "Horror",
+      "Sci-Fi",
+      "Thriller"
+    ],
+    "year": 2011,
+    "rating": 8.5,
+    "type": "tv",
+    "overview": "An anthology series exploring the dark side of technology and its impact on society.",
+    "poster": "https://image.tmdb.org/t/p/w300/pZh2WhyOwvqmfLHs9U6sxfSJTNB.jpg",
+    "tmdbId": 72812,
+    "poster_path": "/pZh2WhyOwvqmfLHs9U6sxfSJTNB.jpg",
+    "posterSource": "tmdb"
+  },
+  {
+    "id": "41",
+    "title": "Westworld",
+    "genres": [
+      "Drama",
+      "Mystery",
+      "Sci-Fi",
+      "Thriller"
+    ],
+    "year": 2016,
+    "rating": 8.6,
+    "type": "tv",
+    "overview": "An advanced android robot host suffers a crisis of identity across several timelines.",
+    "poster": "https://image.tmdb.org/t/p/w300/XEJWiv541Tzmw14lWDUFhiZqps.jpg",
+    "tmdbId": 68379,
+    "poster_path": "/XEJWiv541Tzmw14lWDUFhiZqps.jpg",
+    "posterSource": "tmdb"
+  },
+  {
+    "id": "42",
+    "title": "Better Call Saul",
+    "genres": [
+      "Crime",
+      "Drama"
+    ],
+    "year": 2015,
+    "rating": 8.7,
+    "type": "tv",
+    "overview": "The story of Jimmy McGill, a small-time lawyer who will become the notorious lawyer Saul Goodman.",
+    "poster": "https://via.placeholder.com/300x450?text=Better%20Call%20Saul",
+    "tmdbId": 55842
+  },
+  {
+    "id": "43",
+    "title": "The Crown",
+    "genres": [
+      "Drama",
+      "History"
+    ],
+    "year": 2016,
+    "rating": 8.7,
+    "type": "tv",
+    "overview": "The story of the reign of Queen Elizabeth II, and the political events that shaped the second half of the 20th century.",
+    "poster": "https://via.placeholder.com/300x450?text=The%20Crown",
+    "tmdbId": 48113
+  },
+  {
+    "id": "44",
+    "title": "Chernobyl",
+    "genres": [
+      "Drama",
+      "History",
+      "Thriller"
+    ],
+    "year": 2019,
+    "rating": 9.4,
+    "type": "tv",
+    "overview": "After the Chernobyl accident, a group of liquidators attempt to prevent the disaster from spreading.",
+    "poster": "https://via.placeholder.com/300x450?text=Chernobyl",
+    "tmdbId": 78773
+  },
+  {
+    "id": "45",
+    "title": "Dark",
+    "genres": [
+      "Drama",
+      "Mystery",
+      "Sci-Fi"
+    ],
+    "year": 2017,
+    "rating": 8.8,
+    "type": "tv",
+    "overview": "The disappearance of two children reveals the existence of a time machine.",
+    "poster": "https://via.placeholder.com/300x450?text=Dark",
+    "tmdbId": 568486
+  },
+  {
+    "id": "46",
+    "title": "La Casa de Papel",
+    "genres": [
+      "Action",
+      "Crime",
+      "Drama",
+      "Thriller"
+    ],
+    "year": 2017,
+    "rating": 8.3,
+    "type": "tv",
+    "overview": "A group of friends take on an impossible heist in exchange for a chance to start over.",
+    "poster": "https://image.tmdb.org/t/p/w300/oHK5JnkXD2YzgfpaVoaq1x2DE42.jpg",
+    "tmdbId": 73427,
+    "poster_path": "/oHK5JnkXD2YzgfpaVoaq1x2DE42.jpg",
+    "posterSource": "tmdb"
+  },
+  {
+    "id": "47",
+    "title": "Squid Game",
+    "genres": [
+      "Drama",
+      "Horror",
+      "Thriller"
+    ],
+    "year": 2021,
+    "rating": 8.4,
+    "type": "tv",
+    "overview": "A man in debt participates in a secret game with deadly rules.",
+    "poster": "https://via.placeholder.com/300x450?text=Squid%20Game",
+    "tmdbId": 1313961
+  },
+  {
+    "id": "48",
+    "title": "The Last of Us",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Drama",
+      "Sci-Fi",
+      "Thriller"
+    ],
+    "year": 2023,
+    "rating": 8.8,
+    "type": "tv",
+    "overview": "A post-apocalyptic story following the journey of a hardened survivor and an impulsive teenager.",
+    "poster": "https://image.tmdb.org/t/p/w300/oUZTOftDBESb4jAKwe1PUVVhojA.jpg",
+    "tmdbId": 93409,
+    "poster_path": "/oUZTOftDBESb4jAKwe1PUVVhojA.jpg",
+    "posterSource": "tmdb"
+  },
+  {
+    "id": "49",
+    "title": "Succession",
+    "genres": [
+      "Drama"
+    ],
+    "year": 2018,
+    "rating": 8.7,
+    "type": "tv",
+    "overview": "The story of the Roy family, the dysfunctional media and entertainment dynasty.",
+    "poster": "https://image.tmdb.org/t/p/w300/uUfvcAfk0AKd8eFbZXu0i4cRi8V.jpg",
+    "tmdbId": 76341,
+    "poster_path": "/uUfvcAfk0AKd8eFbZXu0i4cRi8V.jpg",
+    "posterSource": "tmdb"
+  },
+  {
+    "id": "50",
+    "title": "The Boys",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Drama",
+      "War"
+    ],
+    "year": 2019,
+    "rating": 8.7,
+    "type": "tv",
+    "overview": "What happens when ordinary people find themselves empowered with the most dangerous superpowers on the planet?",
+    "poster": "https://image.tmdb.org/t/p/w300/bNDpwOFu6K3mXzXAWUW43yAgCeh.jpg",
+    "tmdbId": 77264,
+    "poster_path": "/bNDpwOFu6K3mXzXAWUW43yAgCeh.jpg",
+    "posterSource": "tmdb"
+  }
 ]

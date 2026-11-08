@@ -6,30 +6,129 @@
   <title>iRECOMMEND - Movie Recommendation App</title>
   <link rel="icon" href="/favicon.ico">
   <link rel="stylesheet" href="/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="dark">
   <div id="app">
+    <!-- Video overlay for Netflix-style gradient -->
+    <div class="video-overlay" id="video-overlay"></div>
+    <div id="theme-toggle-container" style="position: fixed; top: 1rem; right: 1rem; z-index: 1000; display: none;">
+      <button id="global-theme-toggle" class="primary-btn" style="width: auto; padding: 0.5rem 1rem; font-size: 0.8rem; border-radius: 50px;">
+        ☀️ Theme
+      </button>
+    </div>
+
     <header class="header">
-      <div class="logo">iRECOMMEND</div>
-      <nav class="nav">
-        <a href="#/" class="nav-link">Home</a>
-        <a href="#/movies" class="nav-link">Movies</a>
-        <a href="#/tv" class="nav-link">TV</a>
-        <a href="#/toprated" class="nav-link">Top Rated</a>
-        <a href="#/liked" class="nav-link">Liked</a>
-        <a href="#/watchlater" class="nav-link">Watch Later</a>
-        <a href="#/watched" class="nav-link">Watched</a>
+      <div class="logo-wrapper">
+        <div class="logo">iRECOMMEND</div>
+        <div class="logo-netflix">NETFLIX MODE</div>
+      </div>
+      <nav class="nav-container">
+        <nav class="nav">
+          <a href="#/" class="nav-link">Home</a>
+          <a href="#/movies" class="nav-link">Movies</a>
+          <a href="#/tv" class="nav-link">TV</a>
+          <a href="#/toprated" class="nav-link">Top Rated</a>
+          <a href="#/liked" class="nav-link">Liked</a>
+          <a href="#/watchlater" class="nav-link">Watch Later</a>
+          <a href="#/watched" class="nav-link">Watched</a>
+          <button id="theme-toggle-btn" class="theme-toggle-btn" title="Toggle Theme">
+            ☀️
+          </button>
+        </nav>
       </nav>
       <div class="auth">
-        <button id="login-btn">Sign In</button>
+        <div id="user-profile" class="user-profile hidden">
+          <span class="user-name" id="user-name"></span>
+          <div class="user-avatar" id="user-avatar"></div>
+        </div>
+        <button id="login-btn" class="primary-btn">Sign In</button>
       </div>
     </header>
 
     <main class="main">
+      <!-- Home Section -->
       <section id="home-section" class="section">
-        <h2 class="section-title">Popular Movies</h2>
+        <div class="section-header">
+          <h2 class="section-title">Popular Movies</h2>
+          <button class="secondary-btn" id="view-all-home">View All</button>
+        </div>
         <div id="home-grid" class="movie-grid">
-          <p>Loading movies...</p>
+          <p class="loading">Loading movies...</p>
+        </div>
+      </section>
+
+      <!-- Movies Section -->
+      <section id="movies-section" class="section hidden">
+        <div class="section-header">
+          <h2 class="section-title">Movies</h2>
+          <button class="secondary-btn" id="view-all-movies">View All</button>
+        </div>
+        <div id="movies-grid" class="movie-grid">
+          <p class="loading">Loading movies...</p>
+        </div>
+      </section>
+
+      <!-- TV Series Section -->
+      <section id="tv-section" class="section hidden">
+        <div class="section-header">
+          <h2 class="section-title">TV Series</h2>
+          <button class="secondary-btn" id="view-all-tv">View All</button>
+        </div>
+        <div id="tv-grid" class="movie-grid">
+          <p class="loading">Loading TV series...</p>
+        </div>
+      </section>
+
+      <!-- Top Rated Section -->
+      <section id="toprated-section" class="section hidden">
+        <div class="section-header">
+          <h2 class="section-title">Top Rated</h2>
+          <button class="secondary-btn" id="view-all-toprated">View All</button>
+        </div>
+        <div id="toprated-grid" class="movie-grid">
+          <p class="loading">Loading top rated content...</p>
+        </div>
+      </section>
+
+      <!-- Liked Section -->
+      <section id="liked-section" class="section hidden">
+        <div class="section-header">
+          <h2 class="section-title">Liked Movies</h2>
+        </div>
+        <div id="liked-grid" class="movie-grid">
+          <div class="empty-state">
+            <h3>Your Liked Movies</h3>
+            <p>When you like movies, they'll appear here.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Watch Later Section -->
+      <section id="watchlater-section" class="section hidden">
+        <div class="section-header">
+          <h2 class="section-title">Watch Later</h2>
+        </div>
+        <div id="watchlater-grid" class="movie-grid">
+          <div class="empty-state">
+            <h3>Your Watch Later List</h3>
+            <p>Add movies to watch later and they'll appear here.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Watched Section -->
+      <section id="watched-section" class="section hidden">
+        <div class="section-header">
+          <h2 class="section-title">Watched</h2>
+        </div>
+        <div id="watched-grid" class="movie-grid">
+          <div class="empty-state">
+            <h3>Your Watched List</h3>
+            <p>Mark movies as watched and they'll appear here.</p>
+          </div>
         </div>
       </section>
     </main>
@@ -37,6 +136,30 @@
     <footer class="footer">
       <p>&copy; 2024 iRECOMMEND. All rights reserved.</p>
     </footer>
+  </div>
+
+  <!-- Auth Modal -->
+  <div id="auth-modal" class="hidden">
+    <div class="modal-overlay">
+      <button class="close-btn" id="close-modal">&times;</button>
+      <h2 id="modal-title">Sign In</h2>
+      <form id="auth-form">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        </div>
+        <div id="auth-error" class="hidden"></div>
+        <button type="submit" id="auth-submit">Sign In</button>
+      </form>
+      <div class="modal-switch">
+        <p id="modal-switch-text">Don't have an account?</p>
+        <a href="#" id="modal-switch-link">Sign up instead</a>
+      </div>
+    </div>
   </div>
 
   <script type="module" src="/app.js"></script>

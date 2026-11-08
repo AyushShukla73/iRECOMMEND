@@ -8,6 +8,7 @@ client/dist/
 # Runtime data
 data/*.sqlite
 data/*.db
+data/server-port.json
 
 # Environment
 .env
@@ -34,3 +35,13 @@ coverage/
 
 # Optional: keep movies.json as sample data (uncomment if you want it in repo)
 # data/movies.json
+
+# NPM lockfiles (optional - useful for reproducible builds)
+# package-lock.json
+
+# Claude Code
+.claude/
+
+# Local scratch/debug scripts (may contain hardcoded API keys)
+test-*.mjs
+fetch-posters.mjs

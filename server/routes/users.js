@@ -1,6 +1,7 @@
 import { Router } from 'express';
 import getDb from '../db/init.js';
 import { protect } from '../middleware/auth.js';
+import { AppError } from '../middleware/errorHandler.js';
 
 const router = Router();
 
@@ -8,10 +9,10 @@ router.get('/me', protect, async (req, res, next) => {
   try {
     const db = getDb();
 
-    const likes = db.prepare('SELECT movie_id FROM user_interactions WHERE user_id = ? AND type = ?', [req.user.id, 'like']).all();
-    const watchlater = db.prepare('SELECT movie_id FROM user_interactions WHERE user_id = ? AND type = ?', [req.user.id, 'watchlater']).all();
-    const watched = db.prepare('SELECT movie_id FROM user_interactions WHERE user_id = ? AND type = ?', [req.user.id, 'watched']).all();
-    const ratings = db.prepare('SELECT movie_id, value FROM user_interactions WHERE user_id = ? AND type = ?', [req.user.id, 'rating']).all();
+    const likes = db.prepare('SELECT movie_id FROM user_interactions WHERE user_id = ? AND type = ?').all(req.user.id, 'like');
+    const watchlater = db.prepare('SELECT movie_id FROM user_interactions WHERE user_id = ? AND type = ?').all(req.user.id, 'watchlater');
+    const watched = db.prepare('SELECT movie_id FROM user_interactions WHERE user_id = ? AND type = ?').all(req.user.id, 'watched');
+    const ratings = db.prepare('SELECT movie_id, value FROM user_interactions WHERE user_id = ? AND type = ?').all(req.user.id, 'rating');
 
     res.json({
       success: true,
@@ -27,7 +28,8 @@ router.get('/me', protect, async (req, res, next) => {
       }
     });
   } catch (error) {
-    next(error);
+    const appError = new AppError(`Failed to load user data: ${error.message}`, 500);
+    next(appError);
   }
 });
 
@@ -72,7 +74,7 @@ router.put('/me', protect, async (req, res, next) => {
 router.get('/me/likes', protect, async (req, res, next) => {
   try {
     const db = getDb();
-    const likes = db.prepare('SELECT movie_id FROM user_interactions WHERE user_id = ? AND type = ?', [req.user.id, 'like']).all();
+    const likes = db.prepare('SELECT movie_id FROM user_interactions WHERE user_id = ? AND type = ?').all(req.user.id, 'like');
     res.json({ success: true, data: { likes: likes.map(i => i.movie_id) } });
   } catch (error) {
     next(error);
@@ -102,7 +104,7 @@ router.delete('/me/likes/:movieId', protect, async (req, res, next) => {
 router.get('/me/watchlater', protect, async (req, res, next) => {
   try {
     const db = getDb();
-    const watchlater = db.prepare('SELECT movie_id FROM user_interactions WHERE user_id = ? AND type = ?', [req.user.id, 'watchlater']).all();
+    const watchlater = db.prepare('SELECT movie_id FROM user_interactions WHERE user_id = ? AND type = ?').all(req.user.id, 'watchlater');
     res.json({ success: true, data: { watchlater: watchlater.map(i => i.movie_id) } });
   } catch (error) {
     next(error);
@@ -122,7 +124,7 @@ router.post('/me/watchlater/:movieId', protect, async (req, res, next) => {
 router.delete('/me/watchlater/:movieId', protect, async (req, res, next) => {
   try {
     const db = getDb();
-    db.prepare('DELETE FROM user_interactions WHERE user_id = ? AND movie_id = ? AND type = ?', [req.user.id, req.params.movieId, 'watchlater']).run();
+    db.prepare('DELETE FROM user_interactions WHERE user_id = ? AND movie_id = ? AND type = ?').run(req.user.id, req.params.movieId, 'watchlater');
     res.json({ success: true, data: { message: 'Movie removed from watch later' } });
   } catch (error) {
     next(error);
@@ -132,7 +134,7 @@ router.delete('/me/watchlater/:movieId', protect, async (req, res, next) => {
 router.get('/me/watched', protect, async (req, res, next) => {
   try {
     const db = getDb();
-    const watched = db.prepare('SELECT movie_id FROM user_interactions WHERE user_id = ? AND type = ?', [req.user.id, 'watched']).all();
+    const watched = db.prepare('SELECT movie_id FROM user_interactions WHERE user_id = ? AND type = ?').all(req.user.id, 'watched');
     res.json({ success: true, data: { watched: watched.map(i => i.movie_id) } });
   } catch (error) {
     next(error);
@@ -152,7 +154,7 @@ router.post('/me/watched/:movieId', protect, async (req, res, next) => {
 router.delete('/me/watched/:movieId', protect, async (req, res, next) => {
   try {
     const db = getDb();
-    db.prepare('DELETE FROM user_interactions WHERE user_id = ? AND movie_id = ? AND type = ?', [req.user.id, req.params.movieId, 'watched']).run();
+    db.prepare('DELETE FROM user_interactions WHERE user_id = ? AND movie_id = ? AND type = ?').run(req.user.id, req.params.movieId, 'watched');
     res.json({ success: true, data: { message: 'Movie removed from watched' } });
   } catch (error) {
     next(error);

@@ -190,10 +190,10 @@ export const getRecommendations = (userId, options = {}) => {
 
   const db = getDb();
 
-  const userLikes = db.prepare('SELECT movie_id FROM user_interactions WHERE user_id = ? AND type = ?', [userId, 'like']).all();
+  const userLikes = db.prepare('SELECT movie_id FROM user_interactions WHERE user_id = ? AND type = ?').all(userId, 'like');
   const likedMovieIds = userLikes.map(i => i.movie_id);
 
-  const allMovies = db.prepare('SELECT id, title, genres, year, rating, type FROM movies').all();
+  const allMovies = db.prepare('SELECT * FROM movies').all();
 
   const collabRecs = getCollaborativeRecommendations(userId, K_NEIGHBORS, SIMILARITY_THRESHOLD);
 
@@ -247,10 +247,10 @@ export const getRecommendations = (userId, options = {}) => {
   });
 };
 
-export const seedMoviesTable = () => {
+export const seedMoviesTable = (movieList = null) => {
   const db = getDb();
 
-  const movies = [
+  const moviesToSeed = movieList || [
     { id: '1', title: 'The Matrix', genres: ['Action', 'Sci-Fi'], year: 1999, rating: 8.7, type: 'movie' },
     { id: '2', title: 'Inception', genres: ['Action', 'Sci-Fi'], year: 2010, rating: 8.8, type: 'movie' },
     { id: '3', title: 'Interstellar', genres: ['Adventure', 'Drama', 'Sci-Fi'], year: 2014, rating: 8.6, type: 'movie' },
@@ -275,9 +275,10 @@ export const seedMoviesTable = () => {
   const insert = db.prepare(`INSERT OR REPLACE INTO movies (id, title, genres, year, rating, type) VALUES (?, ?, ?, ?, ?, ?)`);
   const insertMany = db.transaction((movieList) => {
     for (const movie of movieList) {
-      insert.run(movie.id, movie.title, JSON.stringify(movie.genres), movie.year, movie.rating, movie.type);
+      const genres = Array.isArray(movie.genres) ? JSON.stringify(movie.genres) : movie.genres || '[]';
+      insert.run(String(movie.id), movie.title, genres, movie.year, movie.rating, movie.type);
     }
   });
 
-  insertMany(movies);
+  insertMany(moviesToSeed);
 };
